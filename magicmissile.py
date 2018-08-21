@@ -3,7 +3,6 @@
 #Library imports
 import base64
 import codecs
-import binascii
 #Decode type select
 print('Select which encoding the input string is in: \nA: Base64\nB: Hex\nC: Decimal\nD: Binary')
 selection = str(input())
