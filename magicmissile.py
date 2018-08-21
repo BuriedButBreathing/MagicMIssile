@@ -3,6 +3,7 @@
 #Library imports
 import base64
 import codecs
+import binascii
 #Decode type select
 print('Select which encoding the input string is in: \nA: Base64\nB: Hex\nC: Decimal\nD: Binary')
 selection = str(input())
@@ -10,7 +11,8 @@ print('Your selection was: ' + (selection))
 #Base64 Decoding
 if selection in ['a', 'A']:
     b64string = str(input('Paste Base64 string to be decoded: '))
-    decodedb64 = base64.b64decode(b64string)
+    b64string = b64string + '================='
+    decodedb64 = base64.b64decode(b64string).decode('ascii')
     print(decodedb64)
 # Hex Decoding
 elif selection in ['B', 'b']:
