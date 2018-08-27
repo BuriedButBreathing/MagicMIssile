@@ -1,10 +1,11 @@
 # MagicMissile
 This is a script to automate the decoding of various encoding types.
 
-The intended use case is to call the script, select the desired input type (base64, hex, decimal, or binary), paste the input encoded string, which will then, hopefully, be decoded.
+The intended use case is to call the script, select the desired input type
+(base64, hex, decimal, or binary), paste the input encoded string, which will
+then, hopefully, decode correctly.
 
-Work on making decimal and binary work
-Current version 0.1
+Current version 1.0
 --------------------
 ___  ___            _       ___  ____         _ _      
 |  \/  |           (_)      |  \/  (_)       (_) |     
@@ -15,5 +16,12 @@ ___  ___            _       ___  ____         _ _
                __/ |                                   
               |___/                                    
 
+It works, most of the time, and it's not really very pretty.
 
-Still fleshing things out, converting from the start with Python 2.7 to Python 3. Learning is fun.
+It's written in Python 3.27, so if you try to launch it in python2
+it'll die and not work, so call it with python3.
+
+When prompted to make a selection, use the character letter of your
+choice, either A, B, C, or D, it's case insensitive. If you enter
+an option it wasn't expecting, it'll spit out an error message
+and you'll have to call the script again.
