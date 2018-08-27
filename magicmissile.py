@@ -6,7 +6,7 @@ import codecs
 #Decode type select
 print('Select which encoding the input string is in: \nA: Base64\nB: Hex\nC: Decimal\nD: Binary')
 selection = str(input())
-print('Your selection was: ' + (selection))
+
 #Base64 Decoding
 if selection in ['a', 'A']:
     b64string = str(input('Paste Base64 string to be decoded: '))
@@ -39,5 +39,6 @@ elif selection in ['D', 'd']:
         binoutput.append(character)
     final_string = "".join(binoutput)
     print(final_string)
+#Improper input error
 else:
     print("Choose again, but choose correctly this time")
