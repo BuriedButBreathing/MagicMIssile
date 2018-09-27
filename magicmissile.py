@@ -3,6 +3,21 @@
 #Library imports
 import base64
 import codecs
+#Sweet ASCII art
+art = """
+___  ___            _       ___  ____         _ _
+|  \/  |           (_)      |  \/  (_)       (_) |
+| .  . | __ _  __ _ _  ___  | .  . |_ ___ ___ _| | ___
+| |\/| |/ _` |/ _` | |/ __| | |\/| | / __/ __| | |/ _ \\
+| |  | | (_| | (_| | | (__  | |  | | \__ \__ \ | |  __/
+\_|  |_/\__,_|\__, |_|\___| \_|  |_/_|___/___/_|_|\___|
+               __/ |
+              |___/
+"""
+
+#Print title screen
+print(art)
+
 #Decode type select
 print('Select which encoding the input string is in: \nA: Base64\nB: Hex\nC: Decimal\nD: Binary')
 selection = str(input())
